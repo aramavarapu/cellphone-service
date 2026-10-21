@@ -44,7 +44,7 @@ public class CellPhoneApplication {
         System.out.println();
         phone.dial(cellPhone2.getNumber());
         cellPhone2.dial(phone.getNumber());
-        phone.dial(cellPhone3.getNumber());
+        phone.dial(cellPhone3);
     }
 
         public static void display(CellPhone phone) {
