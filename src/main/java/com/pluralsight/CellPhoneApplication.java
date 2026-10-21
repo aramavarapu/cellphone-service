@@ -29,12 +29,22 @@ public class CellPhoneApplication {
         cellPhone2.setNumber("840-443-9716");
         cellPhone2.setOwner("Sri");
 
+        CellPhone cellPhone3 = new CellPhone(
+                101010101,
+                "iPhone 16",
+                "Verizon",
+                "6149746110",
+                "Ben"
+                );
+
         display(phone);
         display(cellPhone2);
+        display(cellPhone3);
 
         System.out.println();
         phone.dial(cellPhone2.getNumber());
         cellPhone2.dial(phone.getNumber());
+        phone.dial(cellPhone3.getNumber());
     }
 
         public static void display(CellPhone phone) {
